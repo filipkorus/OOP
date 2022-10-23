@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="33e4212c-456b-49f1-9da2-b3ee8b5dd163" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab3/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab3/TestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3/ArithmeticMean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab3/ArithmeticMean.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,8 @@
   "keyToString": {
     "Project.color": "00132b",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager" selected="Application.TestClass">

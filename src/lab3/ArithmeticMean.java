@@ -16,7 +16,8 @@ public class ArithmeticMean {
 				System.exit(1);
 			}
 		}
-		float arithmeticMean = (float)sum / args.length;
-		System.out.println("Średnia arytmetyczna liczb: " + String.join(", ", args) + " wynosi " + arithmeticMean);
+		int arithmeticMean = sum / args.length;
+		int reminder = sum % arithmeticMean;
+		System.out.println("Średnia arytmetyczna liczb: " + String.join(", ", args) + " wynosi " + arithmeticMean + (reminder == 0 ? "" : ", reszta: " + reminder));
 	}
 }

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33e4212c-456b-49f1-9da2-b3ee8b5dd163" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lab4/FileAndURLCopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab4/FileCopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab4/LineCounterPane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab4/WordCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab4/lorem.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab3/ArithmeticMean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab3/ArithmeticMean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab4/LineCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab4/LineCounter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,26 +44,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TestClass">
+  <component name="RunManager" selected="Application.WordCounter">
     <configuration name="ArithmeticMean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab3.ArithmeticMean" />
       <module name="OOP" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lab3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommandLineArguments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab2.CommandLineArguments" />
-      <module name="OOP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lab2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,6 +71,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LineCounterPane" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab4.LineCounterPane" />
+      <module name="OOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab3.TestClass" />
       <module name="OOP" />
@@ -92,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Weekend2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab2.Weekend2" />
+    <configuration name="WordCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab4.WordCounter" />
       <module name="OOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lab2.*" />
+          <option name="PATTERN" value="lab4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WordCounter" />
+        <item itemvalue="Application.LineCounterPane" />
         <item itemvalue="Application.TestClass" />
         <item itemvalue="Application.FloatArithmeticMean" />
         <item itemvalue="Application.ArithmeticMean" />
-        <item itemvalue="Application.CommandLineArguments" />
-        <item itemvalue="Application.Weekend2" />
       </list>
     </recent_temporary>
   </component>

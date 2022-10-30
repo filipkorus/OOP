@@ -1,18 +1,16 @@
 package lab4;
 
+import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class LineCounter {
-	public static void main(String[] args) throws IOException {
-		if (args.length == 0) {
-			System.out.println("Brak argumentów programu.");
-			System.exit(1);
-		}
+public class LineCounterPane {
 
-		String filename = args[0];
+	public static void main(String[] args) throws IOException {
+		String filename = JOptionPane.showInputDialog("Podaj nazwę pliku: ");
+
 		BufferedReader reader = null;
 		try {
 			reader = new BufferedReader(new FileReader(filename));
@@ -28,5 +26,4 @@ public class LineCounter {
 
 		System.out.println("Liczba wierszy w pliku " + filename + " wynosi: " + lines);
 	}
-
 }

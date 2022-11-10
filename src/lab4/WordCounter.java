@@ -8,7 +8,7 @@ import java.io.IOException;
 public class WordCounter {
 	public static void main(String[] args) throws IOException {
 		if (args.length == 0) {
-			System.out.println("Brak argumentów programu.");
+			System.out.println("No arguments were presented.");
 			System.exit(1);
 		}
 
@@ -27,51 +27,40 @@ public class WordCounter {
 
 		while((line = reader.readLine()) != null) {
 			++lineCount;
-
-			String words[] = line.split(" ");
-			wordCount += words.length;
-
-			for (String word : words) {
-				charCount += word.length();
-			}
+			wordCount += line.split(" ").length;
+			charCount += line.length();
 		}
 
 		reader.close();
 
-		boolean l = isArg(args, "l"),
-				  c = isArg(args, "c"),
-				  w = isArg(args, "w");
+		String arguments = getArgString(args);
+		boolean l = arguments.contains("l"),
+				  c = arguments.contains("c"),
+				  w = arguments.contains("w");
 
-		if (l || !(l || c || w)) {
-			System.out.println("wierszy: " + lineCount);
+		if (!(l || c || w)) {
+			l = w = c = true;
 		}
 
-		if (c || !(l || c || w)) {
-			System.out.println("znaków: " + charCount);
-		}
+		if (l) { System.out.println("line count: " + lineCount); }
 
-		if (w || !(l || c || w)) {
-			System.out.println("słów: " + wordCount);
-		}
+		if (c) { System.out.println("char count: " + charCount); }
+
+		if (w) { System.out.println("word count: " + wordCount); }
 	}
 
-	private static boolean isArg(String[] args, String argToCheck) {
+	private static String getArgString(String[] args) {
+		String argString = "";
 		for (String arg : args) {
-			if (!arg.startsWith("-")) {
-				continue;
-			}
-			if (arg.contains(argToCheck)) {
-				return true;
-			}
+			if (!arg.startsWith("-")) { continue; }
+			for (int i = 1; i < arg.length(); ++i) { argString += arg.charAt(i); }
 		}
-		return false;
+		return argString;
 	}
 
 	private static String getFilename(String[] args) {
 		for (String arg : args) {
-			if (!arg.startsWith("-")) {
-				return arg;
-			}
+			if (!arg.startsWith("-")) { return arg; }
 		}
 		return null;
 	}

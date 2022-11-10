@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33e4212c-456b-49f1-9da2-b3ee8b5dd163" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.WordCounter">
+  <component name="RunManager" selected="Application.LineCounterPane">
     <configuration name="ArithmeticMean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab3.ArithmeticMean" />
       <module name="OOP" />
@@ -106,8 +106,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WordCounter" />
         <item itemvalue="Application.LineCounterPane" />
+        <item itemvalue="Application.WordCounter" />
         <item itemvalue="Application.TestClass" />
         <item itemvalue="Application.FloatArithmeticMean" />
         <item itemvalue="Application.ArithmeticMean" />

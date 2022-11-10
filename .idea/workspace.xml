@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33e4212c-456b-49f1-9da2-b3ee8b5dd163" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lab5/MultiplicationTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab5/MultiplicationTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab5/MultiplicationTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
       <recent name="$PROJECT_DIR$/src/lab5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DrawTriangle">
+  <component name="RunManager" selected="Application.MultiplicationTable">
     <configuration name="DrawSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab5.DrawSquare" />
       <module name="OOP" />
@@ -84,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab3.TestClass" />
+    <configuration name="MultiplicationTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab5.MultiplicationTable" />
       <module name="OOP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lab3.*" />
+          <option name="PATTERN" value="lab5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MultiplicationTable" />
         <item itemvalue="Application.DrawTriangle" />
         <item itemvalue="Application.DrawSquare" />
         <item itemvalue="Application.LineCounterPane" />
         <item itemvalue="Application.WordCounter" />
-        <item itemvalue="Application.TestClass" />
       </list>
     </recent_temporary>
   </component>

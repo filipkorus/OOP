@@ -40,9 +40,9 @@ Dla wysokości o długości: 4
 
 ## Zadanie 3.
 
-Po zapoznaniu się z klasą Properties napisz program, który sprawdzi, czy istnieje plik ustawień. Jeśli nie istnieje, to go utworzy. Jeśli istnieje to sprawdzi wartość stosownych kluczy: wartość_minimum, wartość_maximum, procent, powtórzeń_minimum i powtórzeń_maximum.
+Po zapoznaniu się z klasą [Properties](https://docs.oracle.com/javase/tutorial/essential/environment/properties.html) napisz program, który sprawdzi, czy istnieje plik ustawień. Jeśli nie istnieje, to go utworzy. Jeśli istnieje to sprawdzi wartość stosownych kluczy: wartość_minimum, wartość_maximum, procent, powtórzeń_minimum i powtórzeń_maximum.
 
-Proszę zapoznać się z klasą `Random` i metodą `nextInt(int)`;
+Proszę zapoznać się z klasą `Random` i metodą [nextInt(int)](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/Random.html#nextInt(int)).
 
 Program wyświetla losowe czynnikami z zakresu: `[wartość_minimum, wartość_maximum]`, zaś użytkownik powinien wprowadzić poprawną wartość iloczynu. Przykład poniżej.
 

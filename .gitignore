@@ -31,3 +31,6 @@ bin/
 
 ### Java Class ###
 *.class
+
+### properties files ###
+*.properties

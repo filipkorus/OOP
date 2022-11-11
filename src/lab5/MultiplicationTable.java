@@ -1,18 +1,29 @@
-// jak cos to na razie nie uzylem klasy Properties
-
 package lab5;
 
+import java.io.*;
 import java.util.InputMismatchException;
+import java.util.Properties;
 import java.util.Random;
 import java.util.Scanner;
 
 public class MultiplicationTable {
-	private static final int VALUE_MIN = 1;
-	private static final int VALUE_MAX = 10;
-	private static final int REPEAT_MIN = 4;
-	private static final int REPEAT_MAX = 10;
-	private static final int PERCENT = 70;
-	public static void main(String[] args) {
+	enum props {
+		VALUE_MIN,
+		VALUE_MAX,
+		PERCENT,
+		REPEAT_MIN,
+		REPEAT_MAX
+	}
+
+	public static void main(String[] args) throws IOException {
+		Properties p = getProperties();
+
+		int VALUE_MIN = Integer.parseInt(p.getProperty(props.VALUE_MIN.toString()));
+		int VALUE_MAX = Integer.parseInt(p.getProperty(props.VALUE_MAX.toString()));
+		int REPEAT_MIN = Integer.parseInt(p.getProperty(props.REPEAT_MIN.toString()));
+		int REPEAT_MAX = Integer.parseInt(p.getProperty(props.REPEAT_MAX.toString()));
+		int PERCENT = Integer.parseInt(p.getProperty(props.PERCENT.toString()));
+
 		double currentPercent = 0.;
 		int correctTotal = 0;
 		int attemptsTotal = 0;
@@ -45,6 +56,32 @@ public class MultiplicationTable {
 			++attemptsTotal;
 			currentPercent = (double)correctTotal / attemptsTotal * 100;
 		}
+	}
+
+	private static Properties getProperties() throws IOException {
+		Properties properties = new Properties();
+		File file = null;
+		try {
+			file = new File("setup.properties");
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			System.exit(1);
+		}
+
+		if (!file.exists()) {
+			properties.setProperty(props.VALUE_MIN.toString(), "1");
+			properties.setProperty(props.VALUE_MAX.toString(), "10");
+			properties.setProperty(props.PERCENT.toString(), "70");
+			properties.setProperty(props.REPEAT_MIN.toString(), "10");
+			properties.setProperty(props.REPEAT_MAX.toString(), "25");
+
+			properties.store(new FileWriter("setup.properties"), "Multiplication Table settings");
+		}
+
+		FileReader reader = new FileReader(file);
+		properties.load(reader);
+
+		return properties;
 	}
 
 	private static int randInt(int min, int max) {

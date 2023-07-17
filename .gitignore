@@ -34,3 +34,6 @@ bin/
 
 ### properties files ###
 *.properties
+
+### sandbox
+src/sandbox
